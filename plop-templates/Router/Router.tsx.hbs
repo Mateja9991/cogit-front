@@ -1,0 +1,22 @@
+import React, { useMemo } from 'react';
+import { renderRoutes, RouteConfig } from 'react-router-config';
+import { RouteComponentProps } from 'react-router-dom';
+import {{pascalCase name}}Page from './pages/{{pascalCase name}}';
+
+const {{pascalCase name}}Router: React.FC<RouteComponentProps> = (props) => {
+  const { match } = props;
+
+  const routes: RouteConfig[] = useMemo(
+    () => [
+      {
+        path: match.url,
+        component: {{pascalCase name}}Page,
+      },
+    ],
+    [match.url],
+  );
+
+  return renderRoutes(routes);
+};
+
+export default {{pascalCase name}}Router;

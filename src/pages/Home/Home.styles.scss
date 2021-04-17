@@ -1,0 +1,8 @@
+@use '~scss/settings' as *;
+
+.home {
+  @include font-size(24px, 32px);
+
+  padding: 16px;
+  font-weight: 600;
+}

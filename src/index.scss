@@ -1,0 +1,14 @@
+@use '~scss/settings' as *;
+
+html,
+body,
+#root {
+  @include size(100%);
+}
+
+body {
+  @extend %font;
+
+  margin: 0;
+  overscroll-behavior: none;
+}
